@@ -7,8 +7,10 @@ public class POM1 {
 
 	@FindBy(id="email")
 	public static WebElement loginname;
+	
 	@FindBy(id="pass")
 	public static WebElement loginpassword;
+	
 	@FindBy(xpath="//*[@id=\'u_0_b\']")
 	public static WebElement loginlogin;
 }

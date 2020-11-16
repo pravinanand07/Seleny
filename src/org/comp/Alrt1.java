@@ -1,5 +1,6 @@
 package org.comp;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,7 +11,8 @@ public class Alrt1 {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\Praveen\\eclipse-workspace\\SRYA\\Seleny\\driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.redbus.in/");
-		driver.switchTo().alert();
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
 	}
 
 }
